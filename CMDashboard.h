@@ -10,4 +10,9 @@
 
 @interface CMDashboard : NSObject
 
+@property (nonatomic, strong) NSArray * products;
+@property (nonatomic, strong) NSMutableDictionary *userProfile;
+
+- (id) initWithJSON:(NSDictionary*) json;
+
 @end

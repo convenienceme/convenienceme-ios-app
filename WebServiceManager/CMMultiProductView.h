@@ -10,4 +10,6 @@
 
 @interface CMMultiProductView : UIView
 
+@property (nonatomic, strong) IBOutlet UIView * topLevelSubview;
+
 @end

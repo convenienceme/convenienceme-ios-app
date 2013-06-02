@@ -7,6 +7,16 @@
 //
 
 #import "CMAppDelegate.h"
+#import "CMDashboardViewController.h"
+#import "CMLoginViewController.h"
+#import "CMLogViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
+
+@interface CMAppDelegate()
+@property (nonatomic, strong) CMDashboardViewController * dashboardVC;
+@property (nonatomic, strong) CMLogViewController *loginViewController;
+@property (nonatomic, strong) UINavigationController *navController;
+@end
 
 @implementation CMAppDelegate
 
@@ -16,11 +26,60 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+    self.API_KEY = @"StoreAPIKey";
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    self.dashboardVC = [[CMDashboardViewController alloc] init];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:self.dashboardVC];
+
+    [self.window setRootViewController:self.navController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [self showRegularLoginView];
+    
+    
     return YES;
+}
+
+- (void) showRegularLoginView
+{
+    UIViewController *topViewController = [self.navController topViewController];
+    UIViewController *modalViewController = [topViewController modalViewController];
+    
+    // If the login screen is not already displayed, display it. If the login screen is
+    // displayed, then getting back here means the login in progress did not successfully
+    // complete. In that case, notify the login view so it can update its UI appropriately.
+    if (![modalViewController isKindOfClass:[CMLogViewController class]]) {
+        CMLogViewController* loginViewController = [[CMLogViewController alloc] init];
+        
+        [topViewController presentModalViewController:loginViewController animated:NO];
+    }else {
+        CMLogViewController* loginViewController = (CMLogViewController*)modalViewController;
+        //   [loginViewController loginFailed];
+    }
+}
+
+- (void)showLoginView
+{
+    UIViewController *topViewController = [self.navController topViewController];
+    UIViewController *modalViewController = [topViewController modalViewController];
+    
+    // If the login screen is not already displayed, display it. If the login screen is
+    // displayed, then getting back here means the login in progress did not successfully
+    // complete. In that case, notify the login view so it can update its UI appropriately.
+    if (![modalViewController isKindOfClass:[CMLogViewController class]]) {
+        CMLogViewController* loginViewController = [[CMLogViewController alloc]
+                                                      initWithNibName:@"CMLoginViewController"
+                                                      bundle:nil];
+        
+        [topViewController presentModalViewController:loginViewController animated:NO];
+    }else {
+        CMLogViewController* loginViewController = (CMLogViewController*)modalViewController;
+        //    [loginViewController loginFailed];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -145,5 +204,66 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
+#pragma mark - Facebook
+
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return [FBSession.activeSession handleOpenURL:url];
+}
+
+- (void)sessionStateChanged:(FBSession *)session state:(FBSessionState) state error:(NSError *)error
+{
+    switch (state) {
+        case FBSessionStateOpen: {
+            UIViewController *topViewController =            [self.navController topViewController];
+            if ([[topViewController modalViewController]
+                 isKindOfClass:[CMLogViewController class]]) {
+                [topViewController dismissModalViewControllerAnimated:YES];
+            }
+        }
+            break;
+        case FBSessionStateClosed:
+        case FBSessionStateClosedLoginFailed:
+            // Once the user has logged in, we want them to
+            // be looking at the root view.
+            [self.navController popToRootViewControllerAnimated:NO];
+            
+            [FBSession.activeSession closeAndClearTokenInformation];
+            
+            [self showLoginView];
+            break;
+        default:
+            break;
+    }
+    if (error) {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Error"
+                                  message:error.localizedDescription
+                                  delegate:nil
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
+    }
+}
+
+- (void)openSession
+{
+    [FBSession openActiveSessionWithReadPermissions:nil
+                                       allowLoginUI:YES
+                                  completionHandler:
+     ^(FBSession *session,
+       FBSessionState state, NSError *error) {
+         [self sessionStateChanged:session state:state error:error];
+     }];
+}
+
+
+
+
 
 @end

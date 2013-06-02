@@ -10,4 +10,13 @@
 
 @interface CMMiniProfileView : UIView
 
+@property (nonatomic, strong) IBOutlet UIView * topLevelSubview;
+@property (nonatomic, strong) IBOutlet UIImageView *profileImageView;
+@property (nonatomic, strong) IBOutlet UILabel * profileName;
+@property (nonatomic, strong) IBOutlet UILabel * guestSince;
+@property (nonatomic, strong) IBOutlet UIButton * profileButton;
+
+- (void) setUserProfile:(NSDictionary*) userProfile;
+
+
 @end

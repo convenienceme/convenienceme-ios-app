@@ -10,4 +10,15 @@
 
 @implementation CMDashboard
 
+- (id) initWithJSON:(NSDictionary*) json
+{
+    self = [super init];
+    if (self) {
+        _userProfile = [json valueForKey:@"userProfile"];
+        _products = [json valueForKey:@"products"];
+    }
+    return self;
+}
+
+
 @end

@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface CMLoginViewController : UIViewController
+@interface CMLoginViewController : UIViewController <UITextFieldDelegate>
+
+@property (nonatomic,strong) IBOutlet FBLoginView *loginView;
+
+- (IBAction)performLogin:(id)sender;
+- (void) loginFailed;
 
 @end

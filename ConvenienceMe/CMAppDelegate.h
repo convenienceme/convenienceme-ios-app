@@ -16,7 +16,14 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+@property (strong, nonatomic) NSString *API_KEY;
+@property (strong, nonatomic) NSString *authToken;
+@property (strong, nonatomic) NSString *loggedInUsername;
+
+
 - (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
+- (NSURL*)applicationDocumentsDirectory;
+- (void)openSession;
 
 @end
+
