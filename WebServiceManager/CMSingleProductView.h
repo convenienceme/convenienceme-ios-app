@@ -8,11 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+@class CMSingleProductView;
+
+@protocol CMSingleProductViewDelegate <NSObject>
+@optional
+- (void) sliderValueChanged:(CMSingleProductView *) singleView;
+@end
 
 @interface CMSingleProductView : UIView
 
 @property (nonatomic, strong) IBOutlet UIView * topLevelSubview;
 
+@property (weak, nonatomic) IBOutlet id<CMSingleProductViewDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UISlider *percentSlider;
 @property (weak, nonatomic) IBOutlet UILabel *productTitle;
 @property (weak, nonatomic) IBOutlet UIImageView *productImage;

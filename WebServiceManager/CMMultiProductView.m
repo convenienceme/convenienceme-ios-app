@@ -70,6 +70,8 @@
         //recycled and used with other index values later
         view = [[CMSingleProductView alloc] initWithFrame:CGRectMake(0.0, 0.0, 272.0f, 211.0f)];
         view.contentMode = UIViewContentModeCenter;
+        CMSingleProductView * sameView = (CMSingleProductView *) view;
+        sameView.delegate = self;
     }
     else
     {
@@ -92,7 +94,9 @@
 }
 
 
-
+- (void) sliderValueChanged:(CMSingleProductView *)singleView{
+    [self.delegate hideDashboard:self];
+}
 
 
 /*

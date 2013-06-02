@@ -46,6 +46,15 @@
     
     [self.productImage setImageWithURL:[NSURL URLWithString:productImage] placeholderImage:[UIImage imageNamed:@"placeholder-avatar"]];
     float percent = [numberSlider intValue]/100.0;
+    
+    if (percent < 0.3) {
+        [self.percentSlider setMaximumTrackTintColor:[UIColor redColor]];
+        [self.percentSlider setMinimumTrackTintColor:[UIColor redColor]];
+    }else{
+        [self.percentSlider setMaximumTrackTintColor:[UIColor greenColor]];
+        [self.percentSlider setMinimumTrackTintColor:[UIColor greenColor]];
+    }
+    
     self.percentSlider.value = percent;
     [self.productDescription setText:productText];
     [self.productTitle setText:productTitleText];
@@ -54,7 +63,6 @@
 
 
 - (IBAction)sliderValueChanged:(id)sender {
-    
-
+    [self.delegate sliderValueChanged:self];
 }
 @end

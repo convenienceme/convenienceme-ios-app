@@ -14,7 +14,7 @@
 #import "CMDashboard.h"
 #import "CMMultiProductView.h"
 
-@interface CMDashboardViewController : UIViewController
+@interface CMDashboardViewController : UIViewController <CMMultiProductViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *barButtonItem;
 @property (nonatomic, strong) CMDashboard * dashboard;

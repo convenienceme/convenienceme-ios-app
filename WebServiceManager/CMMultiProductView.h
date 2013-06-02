@@ -8,9 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "iCarousel.h"
+#import "CMSingleProductView.h"
 
-@interface CMMultiProductView : UIView <iCarouselDataSource, iCarouselDelegate>
+@class CMMultiProductView;
 
+@protocol CMMultiProductViewDelegate <NSObject>
+@optional
+- (void) hideDashboard:(CMMultiProductView *) multiProductView;
+@end
+
+
+@interface CMMultiProductView : UIView <iCarouselDataSource, iCarouselDelegate, CMSingleProductViewDelegate>
+
+@property (nonatomic, weak) IBOutlet id<CMMultiProductViewDelegate> delegate;
 @property (nonatomic, strong) IBOutlet UIView * topLevelSubview;
 @property (nonatomic, strong) NSMutableArray * productList;
 @property (nonatomic, strong) IBOutlet iCarousel* carousel;

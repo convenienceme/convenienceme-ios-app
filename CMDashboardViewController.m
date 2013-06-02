@@ -96,7 +96,6 @@
     [self.multiProductView setProducts:self.dashboard.products];
 }
 
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -111,4 +110,19 @@
     [self setBarButtonItem:nil];
     [super viewDidUnload];
 }
+
+- (void) hideDashboard:(CMMultiProductView *) multiProductView{
+    
+    /*
+    [self.alertView setHidden:YES];
+    
+    [UIView animateWithDuration:1.0 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [self.alertView setHidden:YES];
+        [self.multiProductView setFrame:CGRectMake(10, 180, 300, 180)];
+    } completion:^(BOOL finished) {
+    
+    }];
+     */
+}
+
 @end
