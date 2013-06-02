@@ -23,4 +23,6 @@
 @property (nonatomic, strong) IBOutlet CMMiniProfileView * profileView;
 @property (nonatomic, strong) IBOutlet CMMultiProductView * multiProductView;
 
+
+
 @end

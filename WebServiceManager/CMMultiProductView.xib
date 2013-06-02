@@ -34,32 +34,27 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIView" id="106792794">
+					<object class="IBUIView" id="238371395">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrameSize">{280, 218}</string>
+						<string key="NSFrameSize">{300, 250}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MQA</bytes>
-							<object class="NSColorSpace" key="NSCustomColorSpace" id="333346757">
-								<int key="NSID">2</int>
-							</object>
+							<bytes key="NSWhite">MCAwAA</bytes>
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{280, 218}</string>
+				<string key="NSFrameSize">{300, 250}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="106792794"/>
+				<reference key="NSNextKeyView" ref="238371395"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
-					<reference key="NSCustomColorSpace" ref="333346757"/>
+					<int key="NSColorSpace">1</int>
+					<bytes key="NSRGB">MC45ODU2NzAwMDY4IDAuOTg1NjcwMDA2OCAwLjk4NTY3MDAwNjgAA</bytes>
 				</object>
 				<object class="IBUISimulatedSizeMetrics" key="IBUISimulatedDestinationMetrics">
 					<string key="IBUISimulatedSizeMetricsClass">IBUISimulatedFreeformSizeMetricsSentinel</string>
@@ -82,14 +77,14 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">carousel</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="106792794"/>
+						<reference key="destination" ref="238371395"/>
 					</object>
 					<int key="connectionID">9</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">dataSource</string>
-						<reference key="source" ref="106792794"/>
+						<reference key="source" ref="238371395"/>
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">7</int>
@@ -97,7 +92,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
-						<reference key="source" ref="106792794"/>
+						<reference key="source" ref="238371395"/>
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">8</int>
@@ -115,7 +110,7 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="106792794"/>
+							<reference ref="238371395"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -132,7 +127,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">6</int>
-						<reference key="object" ref="106792794"/>
+						<reference key="object" ref="238371395"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>

@@ -7,6 +7,7 @@
 //
 
 #import "CMMultiProductView.h"
+#import "CMSingleProductView.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation CMMultiProductView
@@ -24,12 +25,13 @@
     if ((self = [super initWithCoder:aDecoder])) {
         [[NSBundle mainBundle] loadNibNamed:@"CMMultiProductView" owner:self options:nil];
         [self addSubview:self.topLevelSubview];
-        
+        [self.carousel setType:iCarouselTypeCoverFlow];
+
         self.layer.cornerRadius = 5.f;
         self.layer.shadowColor = [UIColor blackColor].CGColor;
         self.layer.shadowOpacity = 1.0f;
         self.layer.shadowRadius = 5.0f;
-        //self.layer.masksToBounds = YES;
+        self.layer.masksToBounds = YES;
     }
     return self;
 }
@@ -59,38 +61,22 @@
 {
     UILabel *label = nil;
     
+    
     //create new view if no view is available for recycling
     if (view == nil)
     {
         //don't do anything specific to the index within
         //this `if (view == nil) {...}` statement because the view will be
         //recycled and used with other index values later
-        view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 250.0f, 200.0f)];
-        ((UIImageView *)view).image = [UIImage imageNamed:@"image.jpeg"];
+        view = [[CMSingleProductView alloc] initWithFrame:CGRectMake(0.0, 0.0, 272.0f, 211.0f)];
         view.contentMode = UIViewContentModeCenter;
-        [view setBackgroundColor:[UIColor greenColor]];
-        
-        label = [[UILabel alloc] initWithFrame:view.bounds];
-        label.backgroundColor = [UIColor greenColor];
-        label.textAlignment = NSTextAlignmentCenter;
-        label.font = [label.font fontWithSize:50];
-        label.tag = 1;
-        [view addSubview:label];
     }
     else
     {
-        //get a reference to the label in the recycled view
-        label = (UILabel *)[view viewWithTag:1];
+     
     }
     
-    //set item label
-    //remember to always set any properties of your carousel item
-    //views outside of the `if (view == nil) {...}` check otherwise
-    //you'll get weird issues with carousel item content appearing
-    //in the wrong place in the carousel
-    
-    // label.text = [[self.productList objectAtIndex:index] stringValue];
-    
+    CMSingleProductView * productView = (CMSingleProductView *) view;
     return view;
 }
 
