@@ -10,10 +10,12 @@
 
 @interface CMProductViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *backImageView;
+@property (weak, nonatomic) IBOutlet UIImageView * backImageView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 - (IBAction)personalButtonTapped:(id)sender;
 - (IBAction)householdButtonTapped:(id)sender;
 - (IBAction)otherButtonTapped:(id)sender;
 
+- (IBAction)gotol3:(id)sender;
 @end

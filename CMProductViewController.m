@@ -8,6 +8,7 @@
 
 #import "CMProductViewController.h"
 #import <MobCSlidingViewController/MobCSlidingViewController.h>
+#import "CML3ViewController.h"
 
 @interface CMProductViewController ()
 
@@ -31,8 +32,8 @@
     
     self.title = @"Products";
     
-    UIScrollView * scrollView = (UIScrollView *) self.view;
-    [scrollView setContentSize:CGSizeMake(320.0, 720.0f)];
+    UIScrollView * scrollView = (UIScrollView *) self.scrollView;
+    [scrollView setContentSize:CGSizeMake(320.0, 520.0f)];
     [scrollView setContentOffset:CGPointMake(0.0, 0.0f)];
     
     UIBarButtonItem *flipButton = [[UIBarButtonItem alloc]
@@ -67,6 +68,15 @@
 - (IBAction)otherButtonTapped:(id)sender {
     [self.backImageView setImage:[UIImage imageNamed:@"Products-other.png"]];
 }
+
+- (IBAction)gotol3:(id)sender {
+    CML3ViewController * viewController = [[CML3ViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+
+
+
 - (void)viewDidUnload {
     [self setBackImageView:nil];
     [super viewDidUnload];
