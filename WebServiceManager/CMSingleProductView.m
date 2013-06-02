@@ -7,6 +7,7 @@
 //
 
 #import "CMSingleProductView.h"
+#import "UIImageView+AFNetworking.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation CMSingleProductView
@@ -35,6 +36,25 @@
 
 }
 
+- (void) setProductDetails:(NSDictionary *) productDetails
+{
+    
+    NSString * productImage = [productDetails valueForKey:@"imageURL"];
+    NSString * productText = [productDetails valueForKey:@"description"];
+    NSString * productTitleText = [productDetails valueForKey:@"name"];
+    NSNumber * numberSlider = [productDetails valueForKey:@"status"];
+    
+    [self.productImage setImageWithURL:[NSURL URLWithString:productImage] placeholderImage:[UIImage imageNamed:@"placeholder-avatar"]];
+    float percent = [numberSlider intValue]/100.0;
+    self.percentSlider.value = percent;
+    [self.productDescription setText:productText];
+    [self.productTitle setText:productTitleText];
+    
+}
+
+
 - (IBAction)sliderValueChanged:(id)sender {
+    
+
 }
 @end

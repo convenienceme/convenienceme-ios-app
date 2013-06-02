@@ -32,8 +32,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self.animatingChute setFrame:CGRectMake(203, -50, 74.0f, 90.0f)];
+    [self.username setText:@"msutherland@me.com"];
+    // aabella@convenience.me
+    // bb@benhbell.com
+    // msutherland@me.com
 }
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    [UIView animateWithDuration:1.0f delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        [self.animatingChute setFrame:CGRectMake(203, 20, 74.0f, 90.0f)];
+    } completion:^(BOOL finished) {
+        NSLog(@"Boom");
+    }];
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -42,6 +57,7 @@
 }
 
 - (void)viewDidUnload {
+    [self setAnimatingChute:nil];
     [super viewDidUnload];
 }
 - (IBAction)signInTapped:(id)sender {

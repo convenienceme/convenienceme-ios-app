@@ -76,7 +76,9 @@
      
     }
     
+    NSDictionary * product = [self.productList objectAtIndex:index];
     CMSingleProductView * productView = (CMSingleProductView *) view;
+    [productView setProductDetails:product];
     return view;
 }
 

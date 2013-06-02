@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface CMSingleProductView : UIView
 
 @property (nonatomic, strong) IBOutlet UIView * topLevelSubview;
@@ -19,5 +20,7 @@
 
 - (IBAction)sendMoreTapped:(id)sender;
 - (IBAction)sliderValueChanged:(id)sender;
+
+- (void) setProductDetails:(NSDictionary *) productDetails;
 
 @end

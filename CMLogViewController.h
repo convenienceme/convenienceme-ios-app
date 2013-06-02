@@ -11,6 +11,7 @@
 @interface CMLogViewController : UIViewController
 
 - (IBAction)signInTapped:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *animatingChute;
 @property (weak, nonatomic) IBOutlet UITextField *password;
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @end

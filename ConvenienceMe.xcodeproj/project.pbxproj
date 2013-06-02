@@ -155,6 +155,9 @@
 		C4936767175A86E700E4EC96 /* CMLogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4936763175A86E700E4EC96 /* CMLogViewController.xib */; };
 		C493676C175A8A9F00E4EC96 /* MobCSlidingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C493676B175A8A9F00E4EC96 /* MobCSlidingViewController.framework */; };
 		C493676D175A8A9F00E4EC96 /* MobCSlidingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C493676B175A8A9F00E4EC96 /* MobCSlidingViewController.framework */; };
+		C4AB8C99175B9FEE005F5F21 /* CMe-iPhoneIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AB8C98175B9FEE005F5F21 /* CMe-iPhoneIcon.png */; };
+		C4AB8C9C175BA595005F5F21 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AB8C9A175BA595005F5F21 /* Icon.png */; };
+		C4AB8C9D175BA595005F5F21 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AB8C9B175BA595005F5F21 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,6 +297,9 @@
 		C4936762175A86E700E4EC96 /* CMLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMLogViewController.m; sourceTree = "<group>"; };
 		C4936763175A86E700E4EC96 /* CMLogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMLogViewController.xib; sourceTree = "<group>"; };
 		C493676B175A8A9F00E4EC96 /* MobCSlidingViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobCSlidingViewController.framework; sourceTree = "<group>"; };
+		C4AB8C98175B9FEE005F5F21 /* CMe-iPhoneIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CMe-iPhoneIcon.png"; sourceTree = "<group>"; };
+		C4AB8C9A175BA595005F5F21 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C4AB8C9B175BA595005F5F21 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +459,9 @@
 		C492000E175ACD1D003B1121 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C4AB8C9A175BA595005F5F21 /* Icon.png */,
+				C4AB8C9B175BA595005F5F21 /* Icon@2x.png */,
+				C4AB8C98175B9FEE005F5F21 /* CMe-iPhoneIcon.png */,
 				C4920081175B90AD003B1121 /* Product-l3s.png */,
 				C4920076175B6525003B1121 /* login-button.png */,
 				C4920067175B5767003B1121 /* Products-L3.png */,
@@ -737,6 +746,9 @@
 				C492007A175B6625003B1121 /* Menu-button.png in Resources */,
 				C4920080175B8E36003B1121 /* CML3ViewController.xib in Resources */,
 				C4920082175B90AD003B1121 /* Product-l3s.png in Resources */,
+				C4AB8C99175B9FEE005F5F21 /* CMe-iPhoneIcon.png in Resources */,
+				C4AB8C9C175BA595005F5F21 /* Icon.png in Resources */,
+				C4AB8C9D175BA595005F5F21 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -979,8 +991,8 @@
 				INFOPLIST_FILE = "ConvenienceMe/ConvenienceMe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "37390571-A848-44B3-A3D3-CC3A624E7DF5";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "37390571-A848-44B3-A3D3-CC3A624E7DF5";
+				PROVISIONING_PROFILE = "E0B60E38-1C46-4E9C-A35F-07EDEDC7A5AD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E0B60E38-1C46-4E9C-A35F-07EDEDC7A5AD";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -989,6 +1001,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Suvarshi Bhadra (8526U3F99S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Suvarshi Bhadra (8526U3F99S)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../FacebookSDK\"",
@@ -999,7 +1012,8 @@
 				INFOPLIST_FILE = "ConvenienceMe/ConvenienceMe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "37390571-A848-44B3-A3D3-CC3A624E7DF5";
+				PROVISIONING_PROFILE = "E0B60E38-1C46-4E9C-A35F-07EDEDC7A5AD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E0B60E38-1C46-4E9C-A35F-07EDEDC7A5AD";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
