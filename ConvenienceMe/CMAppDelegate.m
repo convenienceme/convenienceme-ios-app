@@ -11,7 +11,7 @@
 #import "CMLoginViewController.h"
 #import "CMLogViewController.h"
 #import <MobCSlidingViewController/MobCSlidingViewController.h>
-#import <FacebookSDK/FacebookSDK.h>
+//#import <FacebookSDK/FacebookSDK.h>
 #import "CMBasementMenuViewController.h"
 #import "CMSlidingViewController.h"
 
@@ -209,7 +209,7 @@
 
 #pragma mark - Facebook
 
-
+/*
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
@@ -263,7 +263,7 @@
          [self sessionStateChanged:session state:state error:error];
      }];
 }
-
+*/
 
 
 

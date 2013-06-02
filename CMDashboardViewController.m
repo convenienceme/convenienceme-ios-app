@@ -9,7 +9,7 @@
 #import "CMDashboardViewController.h"
 #import "CMAppDelegate.h"
 #import "CMDashboard.h"
-#import <FacebookSDK/FacebookSDK.h>
+//#import <FacebookSDK/FacebookSDK.h>
 #import <QuartzCore/QuartzCore.h>
 #import <MobCSlidingViewController/MobCSlidingViewController.h>
 
@@ -104,7 +104,7 @@
 }
 
 -(void)logoutButtonWasPressed:(id)sender {
-    [FBSession.activeSession closeAndClearTokenInformation];
+    //   [FBSession.activeSession closeAndClearTokenInformation];
 }
 
 - (void)viewDidUnload {

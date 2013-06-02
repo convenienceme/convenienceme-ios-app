@@ -32,12 +32,6 @@
 		C4497314175A75BC00BB47A1 /* CMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4497311175A75BC00BB47A1 /* CMLoginViewController.m */; };
 		C4497315175A75BC00BB47A1 /* CMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4497312175A75BC00BB47A1 /* CMLoginViewController.xib */; };
 		C4497316175A75BC00BB47A1 /* CMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4497312175A75BC00BB47A1 /* CMLoginViewController.xib */; };
-		C4497318175A770B00BB47A1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4497317175A770B00BB47A1 /* FacebookSDK.framework */; };
-		C4497319175A770B00BB47A1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4497317175A770B00BB47A1 /* FacebookSDK.framework */; };
-		C449731C175A771900BB47A1 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C449731A175A771900BB47A1 /* FacebookSDKResources.bundle */; };
-		C449731D175A771900BB47A1 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C449731A175A771900BB47A1 /* FacebookSDKResources.bundle */; };
-		C449731E175A771900BB47A1 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C449731B175A771900BB47A1 /* FBUserSettingsViewResources.bundle */; };
-		C449731F175A771900BB47A1 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C449731B175A771900BB47A1 /* FBUserSettingsViewResources.bundle */; };
 		C4497321175A779E00BB47A1 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4497320175A779E00BB47A1 /* Accounts.framework */; };
 		C4497323175A77A800BB47A1 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4497322175A77A800BB47A1 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C4497325175A77B700BB47A1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4497324175A77B700BB47A1 /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -197,9 +191,6 @@
 		C4497310175A75BC00BB47A1 /* CMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMLoginViewController.h; sourceTree = "<group>"; };
 		C4497311175A75BC00BB47A1 /* CMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMLoginViewController.m; sourceTree = "<group>"; };
 		C4497312175A75BC00BB47A1 /* CMLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMLoginViewController.xib; sourceTree = "<group>"; };
-		C4497317175A770B00BB47A1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		C449731A175A771900BB47A1 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
-		C449731B175A771900BB47A1 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
 		C4497320175A779E00BB47A1 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		C4497322175A77A800BB47A1 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		C4497324175A77B700BB47A1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -313,7 +304,6 @@
 				C44972D0175A74B200BB47A1 /* Foundation.framework in Frameworks */,
 				C44972D2175A74B200BB47A1 /* CoreGraphics.framework in Frameworks */,
 				C44972D4175A74B200BB47A1 /* CoreData.framework in Frameworks */,
-				C4497318175A770B00BB47A1 /* FacebookSDK.framework in Frameworks */,
 				C493676C175A8A9F00E4EC96 /* MobCSlidingViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +316,6 @@
 				C44972F2175A74B200BB47A1 /* UIKit.framework in Frameworks */,
 				C44972F3175A74B200BB47A1 /* Foundation.framework in Frameworks */,
 				C44972F4175A74B200BB47A1 /* CoreData.framework in Frameworks */,
-				C4497319175A770B00BB47A1 /* FacebookSDK.framework in Frameworks */,
 				C493676D175A8A9F00E4EC96 /* MobCSlidingViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,9 +361,6 @@
 				C4497324175A77B700BB47A1 /* libsqlite3.dylib */,
 				C4497322175A77A800BB47A1 /* AdSupport.framework */,
 				C4497320175A779E00BB47A1 /* Accounts.framework */,
-				C449731A175A771900BB47A1 /* FacebookSDKResources.bundle */,
-				C449731B175A771900BB47A1 /* FBUserSettingsViewResources.bundle */,
-				C4497317175A770B00BB47A1 /* FacebookSDK.framework */,
 				C44972CD175A74B200BB47A1 /* UIKit.framework */,
 				C44972CF175A74B200BB47A1 /* Foundation.framework */,
 				C44972D1175A74B200BB47A1 /* CoreGraphics.framework */,
@@ -712,8 +698,6 @@
 				C44972E6175A74B200BB47A1 /* Default-568h@2x.png in Resources */,
 				C449730E175A74C900BB47A1 /* CMDashboardViewController.xib in Resources */,
 				C4497315175A75BC00BB47A1 /* CMLoginViewController.xib in Resources */,
-				C449731C175A771900BB47A1 /* FacebookSDKResources.bundle in Resources */,
-				C449731E175A771900BB47A1 /* FBUserSettingsViewResources.bundle in Resources */,
 				C4936766175A86E700E4EC96 /* CMLogViewController.xib in Resources */,
 				C492FFDC175AAAF2003B1121 /* CMMiniProfile.xib in Resources */,
 				C492FFE5175AB2AD003B1121 /* CMMiniAlertView.xib in Resources */,
@@ -749,8 +733,6 @@
 				C44972FC175A74B200BB47A1 /* InfoPlist.strings in Resources */,
 				C449730F175A74C900BB47A1 /* CMDashboardViewController.xib in Resources */,
 				C4497316175A75BC00BB47A1 /* CMLoginViewController.xib in Resources */,
-				C449731D175A771900BB47A1 /* FacebookSDKResources.bundle in Resources */,
-				C449731F175A771900BB47A1 /* FBUserSettingsViewResources.bundle in Resources */,
 				C4936767175A86E700E4EC96 /* CMLogViewController.xib in Resources */,
 				C492FFDD175AAAF2003B1121 /* CMMiniProfile.xib in Resources */,
 				C492FFE6175AB2AD003B1121 /* CMMiniAlertView.xib in Resources */,
