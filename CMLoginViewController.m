@@ -8,7 +8,7 @@
 
 #import "CMLoginViewController.h"
 #import "CMAppDelegate.h"
-#import <FacebookSDK/FacebookSDK.h>
+
 
 @interface CMLoginViewController ()
 
