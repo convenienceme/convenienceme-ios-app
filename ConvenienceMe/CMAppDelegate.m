@@ -38,7 +38,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [self showRegularLoginView];
+//    [self showRegularLoginView];
     
     
     return YES;

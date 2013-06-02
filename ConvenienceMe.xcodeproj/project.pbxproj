@@ -72,6 +72,12 @@
 		C4920023175AD795003B1121 /* CMMultiProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920021175AD795003B1121 /* CMMultiProductView.m */; };
 		C4920027175AE07A003B1121 /* CMDashboard.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920026175AE07A003B1121 /* CMDashboard.m */; };
 		C4920028175AE07A003B1121 /* CMDashboard.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920026175AE07A003B1121 /* CMDashboard.m */; };
+		C492002C175AED05003B1121 /* CMSingleProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = C492002B175AED05003B1121 /* CMSingleProductView.m */; };
+		C492002D175AED05003B1121 /* CMSingleProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = C492002B175AED05003B1121 /* CMSingleProductView.m */; };
+		C4920031175AF0AE003B1121 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920030175AF0AE003B1121 /* iCarousel.m */; };
+		C4920032175AF0AE003B1121 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920030175AF0AE003B1121 /* iCarousel.m */; };
+		C4920034175AF9C8003B1121 /* CMSingleProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4920033175AF9C8003B1121 /* CMSingleProductView.xib */; };
+		C4920035175AF9C8003B1121 /* CMSingleProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4920033175AF9C8003B1121 /* CMSingleProductView.xib */; };
 		C492FFBE175A9ED7003B1121 /* NSString+RZMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = C492FFAA175A9ED7003B1121 /* NSString+RZMD5.m */; };
 		C492FFBF175A9ED7003B1121 /* NSString+RZMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = C492FFAA175A9ED7003B1121 /* NSString+RZMD5.m */; };
 		C492FFC0175A9ED7003B1121 /* NSURLAuthenticationChallenge+Fingerprint.m in Sources */ = {isa = PBXBuildFile; fileRef = C492FFAC175A9ED7003B1121 /* NSURLAuthenticationChallenge+Fingerprint.m */; };
@@ -169,6 +175,11 @@
 		C4920021175AD795003B1121 /* CMMultiProductView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMultiProductView.m; sourceTree = "<group>"; };
 		C4920025175AE07A003B1121 /* CMDashboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDashboard.h; sourceTree = "<group>"; };
 		C4920026175AE07A003B1121 /* CMDashboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDashboard.m; sourceTree = "<group>"; };
+		C492002A175AED05003B1121 /* CMSingleProductView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSingleProductView.h; sourceTree = "<group>"; };
+		C492002B175AED05003B1121 /* CMSingleProductView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSingleProductView.m; sourceTree = "<group>"; };
+		C492002F175AF0AE003B1121 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		C4920030175AF0AE003B1121 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		C4920033175AF9C8003B1121 /* CMSingleProductView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMSingleProductView.xib; sourceTree = "<group>"; };
 		C492FFA9175A9ED7003B1121 /* NSString+RZMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RZMD5.h"; sourceTree = "<group>"; };
 		C492FFAA175A9ED7003B1121 /* NSString+RZMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RZMD5.m"; sourceTree = "<group>"; };
 		C492FFAB175A9ED7003B1121 /* NSURLAuthenticationChallenge+Fingerprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLAuthenticationChallenge+Fingerprint.h"; sourceTree = "<group>"; };
@@ -268,6 +279,7 @@
 				C492FFA7175A9ED7003B1121 /* WebServiceManager */,
 				C4497308175A74B800BB47A1 /* ViewController */,
 				C44972D5175A74B200BB47A1 /* ConvenienceMe */,
+				C492002E175AF0AE003B1121 /* iCarousel */,
 				C44972F7175A74B200BB47A1 /* ConvenienceMeTests */,
 				C492FFE8175ABB46003B1121 /* AFNetworking */,
 				C44972CC175A74B200BB47A1 /* Frameworks */,
@@ -387,6 +399,25 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		C4920029175AECC9003B1121 /* SingleProductView */ = {
+			isa = PBXGroup;
+			children = (
+				C492002A175AED05003B1121 /* CMSingleProductView.h */,
+				C492002B175AED05003B1121 /* CMSingleProductView.m */,
+				C4920033175AF9C8003B1121 /* CMSingleProductView.xib */,
+			);
+			name = SingleProductView;
+			sourceTree = "<group>";
+		};
+		C492002E175AF0AE003B1121 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				C492002F175AF0AE003B1121 /* iCarousel.h */,
+				C4920030175AF0AE003B1121 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
 		C492FFA7175A9ED7003B1121 /* WebServiceManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,6 +488,7 @@
 		C492FFE7175AB90B003B1121 /* MultiProductView */ = {
 			isa = PBXGroup;
 			children = (
+				C4920029175AECC9003B1121 /* SingleProductView */,
 				C492001D175AD778003B1121 /* CMMultiProductView.xib */,
 				C4920020175AD795003B1121 /* CMMultiProductView.h */,
 				C4920021175AD795003B1121 /* CMMultiProductView.m */,
@@ -578,6 +610,7 @@
 				C4920017175ACD37003B1121 /* blue-arrow.png in Resources */,
 				C4920019175ACD37003B1121 /* image.jpeg in Resources */,
 				C492001E175AD778003B1121 /* CMMultiProductView.xib in Resources */,
+				C4920034175AF9C8003B1121 /* CMSingleProductView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +631,7 @@
 				C4920018175ACD37003B1121 /* blue-arrow.png in Resources */,
 				C492001A175ACD37003B1121 /* image.jpeg in Resources */,
 				C492001F175AD778003B1121 /* CMMultiProductView.xib in Resources */,
+				C4920035175AF9C8003B1121 /* CMSingleProductView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +687,8 @@
 				C492000C175ABB46003B1121 /* UIImageView+AFNetworking.m in Sources */,
 				C4920022175AD795003B1121 /* CMMultiProductView.m in Sources */,
 				C4920027175AE07A003B1121 /* CMDashboard.m in Sources */,
+				C492002C175AED05003B1121 /* CMSingleProductView.m in Sources */,
+				C4920031175AF0AE003B1121 /* iCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,6 +723,8 @@
 				C492000D175ABB46003B1121 /* UIImageView+AFNetworking.m in Sources */,
 				C4920023175AD795003B1121 /* CMMultiProductView.m in Sources */,
 				C4920028175AE07A003B1121 /* CMDashboard.m in Sources */,
+				C492002D175AED05003B1121 /* CMSingleProductView.m in Sources */,
+				C4920032175AF0AE003B1121 /* iCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

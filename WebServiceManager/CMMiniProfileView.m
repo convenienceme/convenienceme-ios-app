@@ -8,6 +8,7 @@
 
 #import "CMMiniProfileView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UIImageView+AFNetworking.h"
 
 @implementation CMMiniProfileView
 
@@ -36,7 +37,13 @@
 
 - (void) setUserProfile:(NSDictionary*) userProfile{
     
+    NSString * userImage = [userProfile valueForKey:@"imageURL"];
+    NSString * name = [userProfile valueForKey:@"name"];
+    NSString * guestSince = [userProfile valueForKey:@"guestSince"];
     
+    [self.profileImageView setImageWithURL:[NSURL URLWithString:userImage] placeholderImage:[UIImage imageNamed:@"placeholder-avatar"]];
+    [self.profileName setText:name];
+    [self.guestSince setText:guestSince];
 }
 
 /*

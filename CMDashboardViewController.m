@@ -31,9 +31,11 @@
 
 - (void)viewDidLoad
 {
-
     [super viewDidLoad];
-
+    [self setTitle:@"Dashboard"];
+    
+    UIScrollView * scrollView = (UIScrollView *) self.view;
+    [scrollView setContentSize:CGSizeMake(320.0, 520.0f)];
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -42,6 +44,10 @@
     
     CMAppDelegate * appDelegate = (CMAppDelegate *) [UIApplication sharedApplication].delegate;                                                                            
     NSString *loggedInUsername = appDelegate.loggedInUsername;
+    
+    if ([loggedInUsername length] < 1) {
+        loggedInUsername = @"test";
+    }
     
     NSDictionary* parameters = [NSDictionary dictionaryWithObjectsAndKeys:loggedInUsername, @"userid",nil];
     
@@ -62,14 +68,14 @@
                                                                      }
                                                                  }];
     [self.webServiceManager enqueueRequest:request];
-    
-    
 }
 
 - (void) dataLoaded{
     
+    NSDictionary *userProfile = self.dashboard.userProfile;
+    [self.profileView setUserProfile:userProfile];
     
-    
+    [self.multiProductView setProducts:self.dashboard.products];
 }
 
 

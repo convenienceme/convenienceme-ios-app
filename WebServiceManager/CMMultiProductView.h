@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iCarousel.h"
 
-@interface CMMultiProductView : UIView
+@interface CMMultiProductView : UIView <iCarouselDataSource, iCarouselDelegate>
 
 @property (nonatomic, strong) IBOutlet UIView * topLevelSubview;
+@property (nonatomic, strong) NSMutableArray * productList;
+@property (nonatomic, strong) IBOutlet iCarousel* carousel;
+
+- (void) setProducts:(NSArray *) products;
 
 @end

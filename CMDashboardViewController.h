@@ -12,12 +12,14 @@
 #import "CMMiniAlertView.h"
 #import "CMMiniProfileView.h"
 #import "CMDashboard.h"
+#import "CMMultiProductView.h"
 
 @interface CMDashboardViewController : UIViewController
 
 @property (nonatomic, strong) CMDashboard * dashboard;
 @property (nonatomic, strong) RZWebServiceManager *webServiceManager;
-@property (nonatomic, strong) CMMiniAlertView * alertView;
-@property (nonatomic, strong) CMMiniProfileView * profileView;
+@property (nonatomic, strong) IBOutlet CMMiniAlertView * alertView;
+@property (nonatomic, strong) IBOutlet CMMiniProfileView * profileView;
+@property (nonatomic, strong) IBOutlet CMMultiProductView * multiProductView;
 
 @end
