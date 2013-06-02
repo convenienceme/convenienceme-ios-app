@@ -114,6 +114,8 @@
 		C492007B175B6625003B1121 /* Menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920079175B6625003B1121 /* Menu-button.png */; };
 		C492007F175B8E36003B1121 /* CML3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C492007D175B8E36003B1121 /* CML3ViewController.m */; };
 		C4920080175B8E36003B1121 /* CML3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C492007E175B8E36003B1121 /* CML3ViewController.xib */; };
+		C4920082175B90AD003B1121 /* Product-l3s.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920081175B90AD003B1121 /* Product-l3s.png */; };
+		C4920083175B90AD003B1121 /* Product-l3s.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920081175B90AD003B1121 /* Product-l3s.png */; };
 		C492FFBE175A9ED7003B1121 /* NSString+RZMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = C492FFAA175A9ED7003B1121 /* NSString+RZMD5.m */; };
 		C492FFBF175A9ED7003B1121 /* NSString+RZMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = C492FFAA175A9ED7003B1121 /* NSString+RZMD5.m */; };
 		C492FFC0175A9ED7003B1121 /* NSURLAuthenticationChallenge+Fingerprint.m in Sources */ = {isa = PBXBuildFile; fileRef = C492FFAC175A9ED7003B1121 /* NSURLAuthenticationChallenge+Fingerprint.m */; };
@@ -240,6 +242,7 @@
 		C492007C175B8E36003B1121 /* CML3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CML3ViewController.h; sourceTree = "<group>"; };
 		C492007D175B8E36003B1121 /* CML3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CML3ViewController.m; sourceTree = "<group>"; };
 		C492007E175B8E36003B1121 /* CML3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CML3ViewController.xib; sourceTree = "<group>"; };
+		C4920081175B90AD003B1121 /* Product-l3s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Product-l3s.png"; sourceTree = "<group>"; };
 		C492FFA9175A9ED7003B1121 /* NSString+RZMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RZMD5.h"; sourceTree = "<group>"; };
 		C492FFAA175A9ED7003B1121 /* NSString+RZMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RZMD5.m"; sourceTree = "<group>"; };
 		C492FFAB175A9ED7003B1121 /* NSURLAuthenticationChallenge+Fingerprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLAuthenticationChallenge+Fingerprint.h"; sourceTree = "<group>"; };
@@ -450,6 +453,7 @@
 		C492000E175ACD1D003B1121 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C4920081175B90AD003B1121 /* Product-l3s.png */,
 				C4920076175B6525003B1121 /* login-button.png */,
 				C4920067175B5767003B1121 /* Products-L3.png */,
 				C4920068175B5767003B1121 /* products-personal.png */,
@@ -732,6 +736,7 @@
 				C4920077175B6525003B1121 /* login-button.png in Resources */,
 				C492007A175B6625003B1121 /* Menu-button.png in Resources */,
 				C4920080175B8E36003B1121 /* CML3ViewController.xib in Resources */,
+				C4920082175B90AD003B1121 /* Product-l3s.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +772,7 @@
 				C4920075175B644B003B1121 /* menu_button.png in Resources */,
 				C4920078175B6525003B1121 /* login-button.png in Resources */,
 				C492007B175B6625003B1121 /* Menu-button.png in Resources */,
+				C4920083175B90AD003B1121 /* Product-l3s.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

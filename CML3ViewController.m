@@ -26,6 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.title = @"Products";
+    
+    [self.scrollView setContentSize:CGSizeMake(320.0, 800.0f)];
+    [self.scrollView setContentOffset:CGPointMake(0.0, 0.0f)];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -35,4 +40,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setScrollView:nil];
+    [super viewDidUnload];
+}
 @end
