@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobCSlidingViewController/MobCSlidingViewController.h>
 
 @interface CMBasementMenuViewController : UIViewController
+
+@property (nonatomic,strong) MobCSlidingViewController * slidingViewController;
+
+- (IBAction)browseProductsTapped:(id)sender;
+- (IBAction)paymentStatementsTapped:(id)sender;
+- (IBAction)dashboardButtonTapped:(id)sender;
+
 
 @end

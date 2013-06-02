@@ -11,6 +11,7 @@
 #import "CMDashboard.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import <QuartzCore/QuartzCore.h>
+#import <MobCSlidingViewController/MobCSlidingViewController.h>
 
 @interface CMDashboardViewController ()
 
@@ -36,6 +37,23 @@
     
     UIScrollView * scrollView = (UIScrollView *) self.view;
     [scrollView setContentSize:CGSizeMake(320.0, 520.0f)];
+    
+    self.navigationController.navigationBarHidden = NO;
+    
+//    UIBarButtonItem *flipButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(slideLeft)];
+
+    UIBarButtonItem *flipButton = [[UIBarButtonItem alloc]
+                                   initWithImage:[UIImage imageNamed:@"Menu-button.png"] style:UIBarButtonItemStylePlain target:self action:@selector(slideLeft)];
+    
+    self.navigationItem.leftBarButtonItem = flipButton;
+}
+
+- (void) slideLeft
+{
+    UINavigationController * navController = (UINavigationController *)self.parentViewController;
+    MobCSlidingViewController * slidingViewController = (MobCSlidingViewController*)
+    navController.parentViewController;
+    [slidingViewController displayLeftViewAnimated:YES];
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -89,4 +107,8 @@
     [FBSession.activeSession closeAndClearTokenInformation];
 }
 
+- (void)viewDidUnload {
+    [self setBarButtonItem:nil];
+    [super viewDidUnload];
+}
 @end

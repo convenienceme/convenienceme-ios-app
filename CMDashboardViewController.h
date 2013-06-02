@@ -16,6 +16,7 @@
 
 @interface CMDashboardViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *barButtonItem;
 @property (nonatomic, strong) CMDashboard * dashboard;
 @property (nonatomic, strong) RZWebServiceManager *webServiceManager;
 @property (nonatomic, strong) IBOutlet CMMiniAlertView * alertView;

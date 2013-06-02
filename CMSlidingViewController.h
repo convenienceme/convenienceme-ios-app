@@ -10,4 +10,10 @@
 
 @interface CMSlidingViewController : MobCSlidingViewController
 
+
+@property (nonatomic, strong) UIViewController * dashboard;
+@property (nonatomic, strong) UIViewController * products;
+@property (nonatomic, strong) UIViewController * payments;
+
+
 @end

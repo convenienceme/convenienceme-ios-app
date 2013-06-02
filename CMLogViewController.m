@@ -42,13 +42,6 @@
 }
 
 - (void)viewDidUnload {
-    [self setPassword:nil];
-    [self setProductLabel:nil];
-    [self setPercentAvailableSlider:nil];
-    [self setProductImage:nil];
-    [self setProductText:nil];
-    [self setSendMore:nil];
-    [self setSendmorenow:nil];
     [super viewDidUnload];
 }
 - (IBAction)signInTapped:(id)sender {

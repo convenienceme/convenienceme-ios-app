@@ -78,6 +78,46 @@
 		C4920032175AF0AE003B1121 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920030175AF0AE003B1121 /* iCarousel.m */; };
 		C4920034175AF9C8003B1121 /* CMSingleProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4920033175AF9C8003B1121 /* CMSingleProductView.xib */; };
 		C4920035175AF9C8003B1121 /* CMSingleProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4920033175AF9C8003B1121 /* CMSingleProductView.xib */; };
+		C4920039175B35BD003B1121 /* CMBasementMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920037175B35BD003B1121 /* CMBasementMenuViewController.m */; };
+		C492003A175B35BD003B1121 /* CMBasementMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920037175B35BD003B1121 /* CMBasementMenuViewController.m */; };
+		C492003B175B35BD003B1121 /* CMBasementMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4920038175B35BD003B1121 /* CMBasementMenuViewController.xib */; };
+		C492003C175B35BD003B1121 /* CMBasementMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4920038175B35BD003B1121 /* CMBasementMenuViewController.xib */; };
+		C492003F175B3698003B1121 /* SlidingMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = C492003E175B3698003B1121 /* SlidingMenu.png */; };
+		C4920040175B3698003B1121 /* SlidingMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = C492003E175B3698003B1121 /* SlidingMenu.png */; };
+		C4920045175B3D30003B1121 /* app-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920042175B3D30003B1121 /* app-logo.png */; };
+		C4920046175B3D30003B1121 /* app-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920042175B3D30003B1121 /* app-logo.png */; };
+		C4920047175B3D30003B1121 /* convenienceme.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920043175B3D30003B1121 /* convenienceme.png */; };
+		C4920048175B3D30003B1121 /* convenienceme.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920043175B3D30003B1121 /* convenienceme.png */; };
+		C4920049175B3D30003B1121 /* Login-Screen-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920044175B3D30003B1121 /* Login-Screen-BG.png */; };
+		C492004A175B3D30003B1121 /* Login-Screen-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920044175B3D30003B1121 /* Login-Screen-BG.png */; };
+		C492004D175B4232003B1121 /* menubutton.png in Resources */ = {isa = PBXBuildFile; fileRef = C492004C175B4232003B1121 /* menubutton.png */; };
+		C492004E175B4232003B1121 /* menubutton.png in Resources */ = {isa = PBXBuildFile; fileRef = C492004C175B4232003B1121 /* menubutton.png */; };
+		C4920054175B4A87003B1121 /* CMProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920052175B4A87003B1121 /* CMProductViewController.m */; };
+		C4920055175B4A87003B1121 /* CMProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920052175B4A87003B1121 /* CMProductViewController.m */; };
+		C4920056175B4A87003B1121 /* CMProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4920053175B4A87003B1121 /* CMProductViewController.xib */; };
+		C4920057175B4A87003B1121 /* CMProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4920053175B4A87003B1121 /* CMProductViewController.xib */; };
+		C492005B175B4AB8003B1121 /* CMPaymentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920059175B4AB8003B1121 /* CMPaymentsViewController.m */; };
+		C492005C175B4AB8003B1121 /* CMPaymentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920059175B4AB8003B1121 /* CMPaymentsViewController.m */; };
+		C492005D175B4AB8003B1121 /* CMPaymentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C492005A175B4AB8003B1121 /* CMPaymentsViewController.xib */; };
+		C492005E175B4AB8003B1121 /* CMPaymentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C492005A175B4AB8003B1121 /* CMPaymentsViewController.xib */; };
+		C4920060175B4B17003B1121 /* payment-page.png in Resources */ = {isa = PBXBuildFile; fileRef = C492005F175B4B17003B1121 /* payment-page.png */; };
+		C4920061175B4B17003B1121 /* payment-page.png in Resources */ = {isa = PBXBuildFile; fileRef = C492005F175B4B17003B1121 /* payment-page.png */; };
+		C4920065175B4FDA003B1121 /* CMSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920064175B4FDA003B1121 /* CMSlidingViewController.m */; };
+		C4920066175B4FDA003B1121 /* CMSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4920064175B4FDA003B1121 /* CMSlidingViewController.m */; };
+		C492006B175B5767003B1121 /* Products-L3.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920067175B5767003B1121 /* Products-L3.png */; };
+		C492006C175B5767003B1121 /* Products-L3.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920067175B5767003B1121 /* Products-L3.png */; };
+		C492006D175B5767003B1121 /* products-personal.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920068175B5767003B1121 /* products-personal.png */; };
+		C492006E175B5767003B1121 /* products-personal.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920068175B5767003B1121 /* products-personal.png */; };
+		C492006F175B5767003B1121 /* products-household.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920069175B5767003B1121 /* products-household.png */; };
+		C4920070175B5767003B1121 /* products-household.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920069175B5767003B1121 /* products-household.png */; };
+		C4920071175B5767003B1121 /* Products-other.png in Resources */ = {isa = PBXBuildFile; fileRef = C492006A175B5767003B1121 /* Products-other.png */; };
+		C4920072175B5767003B1121 /* Products-other.png in Resources */ = {isa = PBXBuildFile; fileRef = C492006A175B5767003B1121 /* Products-other.png */; };
+		C4920074175B644B003B1121 /* menu_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920073175B644B003B1121 /* menu_button.png */; };
+		C4920075175B644B003B1121 /* menu_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920073175B644B003B1121 /* menu_button.png */; };
+		C4920077175B6525003B1121 /* login-button.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920076175B6525003B1121 /* login-button.png */; };
+		C4920078175B6525003B1121 /* login-button.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920076175B6525003B1121 /* login-button.png */; };
+		C492007A175B6625003B1121 /* Menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920079175B6625003B1121 /* Menu-button.png */; };
+		C492007B175B6625003B1121 /* Menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = C4920079175B6625003B1121 /* Menu-button.png */; };
 		C492FFBE175A9ED7003B1121 /* NSString+RZMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = C492FFAA175A9ED7003B1121 /* NSString+RZMD5.m */; };
 		C492FFBF175A9ED7003B1121 /* NSString+RZMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = C492FFAA175A9ED7003B1121 /* NSString+RZMD5.m */; };
 		C492FFC0175A9ED7003B1121 /* NSURLAuthenticationChallenge+Fingerprint.m in Sources */ = {isa = PBXBuildFile; fileRef = C492FFAC175A9ED7003B1121 /* NSURLAuthenticationChallenge+Fingerprint.m */; };
@@ -180,6 +220,30 @@
 		C492002F175AF0AE003B1121 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		C4920030175AF0AE003B1121 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		C4920033175AF9C8003B1121 /* CMSingleProductView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMSingleProductView.xib; sourceTree = "<group>"; };
+		C4920036175B35BC003B1121 /* CMBasementMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMBasementMenuViewController.h; sourceTree = "<group>"; };
+		C4920037175B35BD003B1121 /* CMBasementMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMBasementMenuViewController.m; sourceTree = "<group>"; };
+		C4920038175B35BD003B1121 /* CMBasementMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMBasementMenuViewController.xib; sourceTree = "<group>"; };
+		C492003E175B3698003B1121 /* SlidingMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SlidingMenu.png; sourceTree = "<group>"; };
+		C4920042175B3D30003B1121 /* app-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-logo.png"; sourceTree = "<group>"; };
+		C4920043175B3D30003B1121 /* convenienceme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = convenienceme.png; sourceTree = "<group>"; };
+		C4920044175B3D30003B1121 /* Login-Screen-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login-Screen-BG.png"; sourceTree = "<group>"; };
+		C492004C175B4232003B1121 /* menubutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menubutton.png; sourceTree = "<group>"; };
+		C4920051175B4A87003B1121 /* CMProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMProductViewController.h; sourceTree = "<group>"; };
+		C4920052175B4A87003B1121 /* CMProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMProductViewController.m; sourceTree = "<group>"; };
+		C4920053175B4A87003B1121 /* CMProductViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMProductViewController.xib; sourceTree = "<group>"; };
+		C4920058175B4AB8003B1121 /* CMPaymentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPaymentsViewController.h; sourceTree = "<group>"; };
+		C4920059175B4AB8003B1121 /* CMPaymentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPaymentsViewController.m; sourceTree = "<group>"; };
+		C492005A175B4AB8003B1121 /* CMPaymentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMPaymentsViewController.xib; sourceTree = "<group>"; };
+		C492005F175B4B17003B1121 /* payment-page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "payment-page.png"; sourceTree = "<group>"; };
+		C4920063175B4FDA003B1121 /* CMSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSlidingViewController.h; sourceTree = "<group>"; };
+		C4920064175B4FDA003B1121 /* CMSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSlidingViewController.m; sourceTree = "<group>"; };
+		C4920067175B5767003B1121 /* Products-L3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Products-L3.png"; sourceTree = "<group>"; };
+		C4920068175B5767003B1121 /* products-personal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "products-personal.png"; sourceTree = "<group>"; };
+		C4920069175B5767003B1121 /* products-household.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "products-household.png"; sourceTree = "<group>"; };
+		C492006A175B5767003B1121 /* Products-other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Products-other.png"; sourceTree = "<group>"; };
+		C4920073175B644B003B1121 /* menu_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_button.png; sourceTree = "<group>"; };
+		C4920076175B6525003B1121 /* login-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button.png"; sourceTree = "<group>"; };
+		C4920079175B6625003B1121 /* Menu-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-button.png"; sourceTree = "<group>"; };
 		C492FFA9175A9ED7003B1121 /* NSString+RZMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RZMD5.h"; sourceTree = "<group>"; };
 		C492FFAA175A9ED7003B1121 /* NSString+RZMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RZMD5.m"; sourceTree = "<group>"; };
 		C492FFAB175A9ED7003B1121 /* NSURLAuthenticationChallenge+Fingerprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLAuthenticationChallenge+Fingerprint.h"; sourceTree = "<group>"; };
@@ -273,6 +337,7 @@
 		C44972C1175A74B200BB47A1 = {
 			isa = PBXGroup;
 			children = (
+				C4920062175B4FB6003B1121 /* Utilities */,
 				C4920024175AE069003B1121 /* Models */,
 				C492000E175ACD1D003B1121 /* Resources */,
 				C492FFD6175AAA4B003B1121 /* SharedViews */,
@@ -375,6 +440,15 @@
 				C4936761175A86E700E4EC96 /* CMLogViewController.h */,
 				C4936762175A86E700E4EC96 /* CMLogViewController.m */,
 				C4936763175A86E700E4EC96 /* CMLogViewController.xib */,
+				C4920036175B35BC003B1121 /* CMBasementMenuViewController.h */,
+				C4920037175B35BD003B1121 /* CMBasementMenuViewController.m */,
+				C4920038175B35BD003B1121 /* CMBasementMenuViewController.xib */,
+				C4920051175B4A87003B1121 /* CMProductViewController.h */,
+				C4920052175B4A87003B1121 /* CMProductViewController.m */,
+				C4920053175B4A87003B1121 /* CMProductViewController.xib */,
+				C4920058175B4AB8003B1121 /* CMPaymentsViewController.h */,
+				C4920059175B4AB8003B1121 /* CMPaymentsViewController.m */,
+				C492005A175B4AB8003B1121 /* CMPaymentsViewController.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -382,6 +456,16 @@
 		C492000E175ACD1D003B1121 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C4920076175B6525003B1121 /* login-button.png */,
+				C4920067175B5767003B1121 /* Products-L3.png */,
+				C4920068175B5767003B1121 /* products-personal.png */,
+				C4920069175B5767003B1121 /* products-household.png */,
+				C492006A175B5767003B1121 /* Products-other.png */,
+				C4920073175B644B003B1121 /* menu_button.png */,
+				C4920079175B6625003B1121 /* Menu-button.png */,
+				C492004C175B4232003B1121 /* menubutton.png */,
+				C4920041175B3D1B003B1121 /* Login */,
+				C492003D175B363D003B1121 /* ScreenMocks */,
 				C492000F175ACD36003B1121 /* profile-green-button.png */,
 				C4920010175ACD36003B1121 /* red-alert-button.png */,
 				C4920011175ACD36003B1121 /* blue-arrow.png */,
@@ -416,6 +500,34 @@
 				C4920030175AF0AE003B1121 /* iCarousel.m */,
 			);
 			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		C492003D175B363D003B1121 /* ScreenMocks */ = {
+			isa = PBXGroup;
+			children = (
+				C492005F175B4B17003B1121 /* payment-page.png */,
+				C492003E175B3698003B1121 /* SlidingMenu.png */,
+			);
+			name = ScreenMocks;
+			sourceTree = "<group>";
+		};
+		C4920041175B3D1B003B1121 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C4920042175B3D30003B1121 /* app-logo.png */,
+				C4920043175B3D30003B1121 /* convenienceme.png */,
+				C4920044175B3D30003B1121 /* Login-Screen-BG.png */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		C4920062175B4FB6003B1121 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C4920063175B4FDA003B1121 /* CMSlidingViewController.h */,
+				C4920064175B4FDA003B1121 /* CMSlidingViewController.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		C492FFA7175A9ED7003B1121 /* WebServiceManager */ = {
@@ -611,6 +723,22 @@
 				C4920019175ACD37003B1121 /* image.jpeg in Resources */,
 				C492001E175AD778003B1121 /* CMMultiProductView.xib in Resources */,
 				C4920034175AF9C8003B1121 /* CMSingleProductView.xib in Resources */,
+				C492003B175B35BD003B1121 /* CMBasementMenuViewController.xib in Resources */,
+				C492003F175B3698003B1121 /* SlidingMenu.png in Resources */,
+				C4920045175B3D30003B1121 /* app-logo.png in Resources */,
+				C4920047175B3D30003B1121 /* convenienceme.png in Resources */,
+				C4920049175B3D30003B1121 /* Login-Screen-BG.png in Resources */,
+				C492004D175B4232003B1121 /* menubutton.png in Resources */,
+				C4920056175B4A87003B1121 /* CMProductViewController.xib in Resources */,
+				C492005D175B4AB8003B1121 /* CMPaymentsViewController.xib in Resources */,
+				C4920060175B4B17003B1121 /* payment-page.png in Resources */,
+				C492006B175B5767003B1121 /* Products-L3.png in Resources */,
+				C492006D175B5767003B1121 /* products-personal.png in Resources */,
+				C492006F175B5767003B1121 /* products-household.png in Resources */,
+				C4920071175B5767003B1121 /* Products-other.png in Resources */,
+				C4920074175B644B003B1121 /* menu_button.png in Resources */,
+				C4920077175B6525003B1121 /* login-button.png in Resources */,
+				C492007A175B6625003B1121 /* Menu-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +760,22 @@
 				C492001A175ACD37003B1121 /* image.jpeg in Resources */,
 				C492001F175AD778003B1121 /* CMMultiProductView.xib in Resources */,
 				C4920035175AF9C8003B1121 /* CMSingleProductView.xib in Resources */,
+				C492003C175B35BD003B1121 /* CMBasementMenuViewController.xib in Resources */,
+				C4920040175B3698003B1121 /* SlidingMenu.png in Resources */,
+				C4920046175B3D30003B1121 /* app-logo.png in Resources */,
+				C4920048175B3D30003B1121 /* convenienceme.png in Resources */,
+				C492004A175B3D30003B1121 /* Login-Screen-BG.png in Resources */,
+				C492004E175B4232003B1121 /* menubutton.png in Resources */,
+				C4920057175B4A87003B1121 /* CMProductViewController.xib in Resources */,
+				C492005E175B4AB8003B1121 /* CMPaymentsViewController.xib in Resources */,
+				C4920061175B4B17003B1121 /* payment-page.png in Resources */,
+				C492006C175B5767003B1121 /* Products-L3.png in Resources */,
+				C492006E175B5767003B1121 /* products-personal.png in Resources */,
+				C4920070175B5767003B1121 /* products-household.png in Resources */,
+				C4920072175B5767003B1121 /* Products-other.png in Resources */,
+				C4920075175B644B003B1121 /* menu_button.png in Resources */,
+				C4920078175B6525003B1121 /* login-button.png in Resources */,
+				C492007B175B6625003B1121 /* Menu-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +833,10 @@
 				C4920027175AE07A003B1121 /* CMDashboard.m in Sources */,
 				C492002C175AED05003B1121 /* CMSingleProductView.m in Sources */,
 				C4920031175AF0AE003B1121 /* iCarousel.m in Sources */,
+				C4920039175B35BD003B1121 /* CMBasementMenuViewController.m in Sources */,
+				C4920054175B4A87003B1121 /* CMProductViewController.m in Sources */,
+				C492005B175B4AB8003B1121 /* CMPaymentsViewController.m in Sources */,
+				C4920065175B4FDA003B1121 /* CMSlidingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,6 +873,10 @@
 				C4920028175AE07A003B1121 /* CMDashboard.m in Sources */,
 				C492002D175AED05003B1121 /* CMSingleProductView.m in Sources */,
 				C4920032175AF0AE003B1121 /* iCarousel.m in Sources */,
+				C492003A175B35BD003B1121 /* CMBasementMenuViewController.m in Sources */,
+				C4920055175B4A87003B1121 /* CMProductViewController.m in Sources */,
+				C492005C175B4AB8003B1121 /* CMPaymentsViewController.m in Sources */,
+				C4920066175B4FDA003B1121 /* CMSlidingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

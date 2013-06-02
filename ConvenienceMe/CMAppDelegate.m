@@ -10,10 +10,13 @@
 #import "CMDashboardViewController.h"
 #import "CMLoginViewController.h"
 #import "CMLogViewController.h"
+#import <MobCSlidingViewController/MobCSlidingViewController.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import "CMBasementMenuViewController.h"
+#import "CMSlidingViewController.h"
 
 @interface CMAppDelegate()
-@property (nonatomic, strong) CMDashboardViewController * dashboardVC;
+@property (nonatomic, strong) CMSlidingViewController * dashboardVC;
 @property (nonatomic, strong) CMLogViewController *loginViewController;
 @property (nonatomic, strong) UINavigationController *navController;
 @end
@@ -26,40 +29,39 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
     self.API_KEY = @"StoreAPIKey";
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    self.dashboardVC = [[CMDashboardViewController alloc] init];
-    self.navController = [[UINavigationController alloc] initWithRootViewController:self.dashboardVC];
+    CMDashboardViewController * topViewController = [[CMDashboardViewController alloc] init];
+    [topViewController setTitle:@"Dashboard"];
+    UINavigationController * topNavController = [[UINavigationController alloc] initWithRootViewController:topViewController];
+    
+    CMBasementMenuViewController * leftViewController = [[CMBasementMenuViewController alloc] init];
+    CMSlidingViewController * slidingViewController = [[CMSlidingViewController alloc] initWithTopViewController:topNavController leftViewController:leftViewController];
+    
+    if ([slidingViewController valueForKey:@"dashboard"] == nil) {
+        [slidingViewController setValue:topNavController forKey:@"dashboard"];
+    }
+    
+    self.dashboardVC = slidingViewController;
+    
 
-    [self.window setRootViewController:self.navController];
+    [self.window setRootViewController:self.dashboardVC];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-//    [self showRegularLoginView];
-    
+    //  [self showRegularLoginView];
+
     
     return YES;
 }
 
 - (void) showRegularLoginView
+
 {
-    UIViewController *topViewController = [self.navController topViewController];
-    UIViewController *modalViewController = [topViewController modalViewController];
-    
-    // If the login screen is not already displayed, display it. If the login screen is
-    // displayed, then getting back here means the login in progress did not successfully
-    // complete. In that case, notify the login view so it can update its UI appropriately.
-    if (![modalViewController isKindOfClass:[CMLogViewController class]]) {
         CMLogViewController* loginViewController = [[CMLogViewController alloc] init];
-        
-        [topViewController presentModalViewController:loginViewController animated:NO];
-    }else {
-        CMLogViewController* loginViewController = (CMLogViewController*)modalViewController;
-        //   [loginViewController loginFailed];
-    }
+        [self.window.rootViewController presentModalViewController:loginViewController animated:NO];
 }
 
 - (void)showLoginView

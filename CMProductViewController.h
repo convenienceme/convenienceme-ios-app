@@ -10,4 +10,10 @@
 
 @interface CMProductViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *backImageView;
+
+- (IBAction)personalButtonTapped:(id)sender;
+- (IBAction)householdButtonTapped:(id)sender;
+- (IBAction)otherButtonTapped:(id)sender;
+
 @end
