@@ -159,6 +159,8 @@
 		C4AB8C9C175BA595005F5F21 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AB8C9A175BA595005F5F21 /* Icon.png */; };
 		C4AB8C9D175BA595005F5F21 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AB8C9B175BA595005F5F21 /* Icon@2x.png */; };
 		C4AB8C9F175BAEE8005F5F21 /* Cme-splash.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AB8C9E175BAEE8005F5F21 /* Cme-splash.png */; };
+		C4AB8CA2175BBA13005F5F21 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AB8CA0175BBA13005F5F21 /* Default.png */; };
+		C4AB8CA3175BBA13005F5F21 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AB8CA1175BBA13005F5F21 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -302,6 +304,8 @@
 		C4AB8C9A175BA595005F5F21 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		C4AB8C9B175BA595005F5F21 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		C4AB8C9E175BAEE8005F5F21 /* Cme-splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cme-splash.png"; sourceTree = "<group>"; };
+		C4AB8CA0175BBA13005F5F21 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C4AB8CA1175BBA13005F5F21 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +346,8 @@
 		C44972C1175A74B200BB47A1 = {
 			isa = PBXGroup;
 			children = (
+				C4AB8CA0175BBA13005F5F21 /* Default.png */,
+				C4AB8CA1175BBA13005F5F21 /* Default@2x.png */,
 				C4920062175B4FB6003B1121 /* Utilities */,
 				C4920024175AE069003B1121 /* Models */,
 				C492000E175ACD1D003B1121 /* Resources */,
@@ -753,6 +759,8 @@
 				C4AB8C9C175BA595005F5F21 /* Icon.png in Resources */,
 				C4AB8C9D175BA595005F5F21 /* Icon@2x.png in Resources */,
 				C4AB8C9F175BAEE8005F5F21 /* Cme-splash.png in Resources */,
+				C4AB8CA2175BBA13005F5F21 /* Default.png in Resources */,
+				C4AB8CA3175BBA13005F5F21 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -995,8 +1003,8 @@
 				INFOPLIST_FILE = "ConvenienceMe/ConvenienceMe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E0B60E38-1C46-4E9C-A35F-07EDEDC7A5AD";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E0B60E38-1C46-4E9C-A35F-07EDEDC7A5AD";
+				PROVISIONING_PROFILE = "8FD0E692-531C-4FF2-81FE-F16C40290BCD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8FD0E692-531C-4FF2-81FE-F16C40290BCD";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1016,8 +1024,8 @@
 				INFOPLIST_FILE = "ConvenienceMe/ConvenienceMe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E0B60E38-1C46-4E9C-A35F-07EDEDC7A5AD";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E0B60E38-1C46-4E9C-A35F-07EDEDC7A5AD";
+				PROVISIONING_PROFILE = "8FD0E692-531C-4FF2-81FE-F16C40290BCD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8FD0E692-531C-4FF2-81FE-F16C40290BCD";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
